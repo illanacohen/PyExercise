@@ -15,3 +15,12 @@ When solving a task pay attention to the following points:
 Input: A string.
 
 Output: A string. 
+
+
+Three Words exercise:
+
+Se te da una cadena con palabras y números separados por espacios en blanco (un espacio). Las palabars contienen solo letras. Deberías revisar si la cadena contiene tres palabras sucesivas. Por ejemplo, la cadena "start 5 one two three 7 end" contiene tres palabras en sucesión.
+
+Entrada: Una cadena con palabras.
+
+Salida: La respuesta como booleano. 
