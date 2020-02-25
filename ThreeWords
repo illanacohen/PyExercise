@@ -1,3 +1,5 @@
+#says true if there are three consecutive words in a string
+
 def checkio(words: str) -> bool:
     word = words
     array = list()
@@ -17,7 +19,7 @@ def checkio(words: str) -> bool:
         if elem.isalpha():
             count += 1
         else:
-            count -=1
+            count = 0
         if count == 3:
             res = True
             break
