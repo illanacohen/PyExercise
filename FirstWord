@@ -1,4 +1,4 @@
-
+#gives the first word over a string that can start with space comma and dots
 
 def first_word(text: str) -> str:
 
