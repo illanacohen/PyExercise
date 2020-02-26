@@ -3,17 +3,22 @@
 
 
 def popular_words(text: str, words: list) -> dict:
+
     dicc = {}
     leveledText = text.lower()
     listText = leveledText.split()
+    
     for key in words:
         dicc[key] = 0
+        
     for word in words:
         word = word.lower() 
+        
     for n in words:
         for m in listText:
             if n == m:
-                dicc[n] = dicc.get(n) + 1                     
+                dicc[n] = dicc.get(n) + 1     
+      
     return dicc
 
 
