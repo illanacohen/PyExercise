@@ -16,12 +16,15 @@ def between_markers(text: str, begin: str, end: str) -> str:
     indexB = -1
     indexE = -1
     res = text
+    
     for i in range(len(text)-lenB+1):
         if text[i:i+lenB] == begin:
             indexB = i+lenB
+            
     for j in range(len(text)-lenE+1):         
         if text[j:j+lenE] == end:
             indexE = j
+            
     if indexB < indexE and indexB != -1:
         res = text[indexB:indexE]
     else:
