@@ -1,12 +1,14 @@
 #gives back the word in between two symbols
 
 def between_markers(text: str, begin: str, end: str) -> str:
+    
     word = ""
     for i in range(len(text)):
         if text[i] == begin:
             for j in range(i,len(text)):
                 if text[j] == end:
-                    word = text[i+1:j]                
+                    word = text[i+1:j]   
+                    
     return word
 
 
