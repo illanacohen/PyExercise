@@ -4,15 +4,18 @@
 
 
 def checkio(numbers_array: tuple) -> list:
+ 
     listArray = list(numbers_array)
     for i in range(len(listArray)):
         min = listArray[i]
+        
         for j in range(i+1,len(listArray)):
             if abs(min) > abs(listArray[j]):     
                 min = listArray[j]
                 listArray[j] = listArray[i]
                 listArray[i] = min    
         min = abs(numbers_array[0])
+        
     return listArray
 
 
