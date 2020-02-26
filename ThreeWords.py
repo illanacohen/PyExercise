@@ -1,10 +1,12 @@
 #says true if there are three consecutive words in a string
 
 def checkio(words: str) -> bool:
+
     word = words
     array = list()
     res = False
     count = 0
+    
     #todo el sig for se puede resumir en str.split()
     for i in range(len(words)):
         dif = len(words) - len(word)
