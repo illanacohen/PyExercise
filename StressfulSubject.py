@@ -6,14 +6,17 @@
      
    
 def is_stressful(subj):
+     
     newsubj = subj.lower()
     finalsubj = newsubj[0]
     alert = False
+
     #get rid of symbols and extra letter
     for i in range(len(newsubj)-1):
         if newsubj[i+1] != newsubj[i] and newsubj[i+1] != "." and newsubj[i+1] != "," and newsubj[i+1] != "!" and newsubj[i+1] != "-":
             finalsubj = finalsubj + newsubj[i+1]
             print(finalsubj)
+               
     #see if red words happens in the new text
     if ("help" in finalsubj) or ("asap" in finalsubj) or ("urgent" in finalsubj):
             alert = True      
@@ -22,6 +25,7 @@ def is_stressful(subj):
     for i in range(len(newsubj)-1):
         if newsubj[i+1] != "." and newsubj[i+1] != "," and newsubj[i+1] != "-":
             finalsubj = finalsubj + newsubj[i+1]
+               
     #check !!! and capital
     if "!!!" in finalsubj[-3:]:
         alert = True
