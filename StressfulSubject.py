@@ -15,7 +15,6 @@ def is_stressful(subj):
     for i in range(len(newsubj)-1):
         if newsubj[i+1] != newsubj[i] and newsubj[i+1] != "." and newsubj[i+1] != "," and newsubj[i+1] != "!" and newsubj[i+1] != "-":
             finalsubj = finalsubj + newsubj[i+1]
-            print(finalsubj)
                
     #see if red words happens in the new text
     if ("help" in finalsubj) or ("asap" in finalsubj) or ("urgent" in finalsubj):
